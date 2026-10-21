@@ -13,7 +13,7 @@ export default function ProjectCard({ project, index }: { project: Project; inde
       transition={{ duration: reduceMotion ? 0 : 0.7, delay: (index % 3) * 0.08, ease: 'easeOut' }}
       whileHover={reduceMotion ? undefined : { y: -7 }}
     >
-      <a className="project-link" href={project.href} aria-label={`Lihat detail ${project.title}`}>
+      <a className="project-link" href={project.href} target="_blank" rel="noreferrer" aria-label={`Buka sumber ${project.title} di tab baru`}>
         <div className="project-visual" style={{ backgroundColor: project.accent }}>
           <motion.img
             src={project.image}
