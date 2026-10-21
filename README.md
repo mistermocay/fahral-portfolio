@@ -19,8 +19,11 @@ npm run preview
 ## Deploy GitHub Pages
 
 1. Buka Settings → Pages.
-2. Pilih GitHub Actions dan tambahkan workflow deployment Vite.
-3. Konfigurasi Vite memakai `base: './'` agar aset menggunakan path relatif.
+2. Pada Build and deployment, pilih **GitHub Actions** sebagai Source.
+3. Workflow `.github/workflows/deploy.yml` akan membangun lalu menerbitkan folder `dist` setiap ada push ke `main`.
+4. Buka Actions untuk memantau hasil deployment. Jika run sebelumnya gagal karena Pages belum aktif, jalankan ulang workflow setelah mengubah pengaturan.
+
+Vite memakai `base: './'` agar aset menggunakan path relatif.
 
 ## Checklist sebelum publikasi
 
