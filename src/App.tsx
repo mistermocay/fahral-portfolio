@@ -79,7 +79,17 @@ export default function App() {
                 <div className="paper-top"><span>FIELD NOTES / 2026</span><Asterisk size={19} /></div>
                 <div className="paper-title">Ideas made<br /><em>tangible.</em></div>
                 <div className="paper-image">
-                  <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85" alt="Workspace dengan cahaya alami" fetchPriority="high" />
+                  <svg viewBox="0 0 304 174" aria-hidden="true">
+                    <rect width="304" height="174" fill="#c9b79e" />
+                    <circle cx="244" cy="34" r="55" fill="#e8d6b9" />
+                    <path d="M0 137 98 70l78 56 62-44 66 40v52H0v-37Z" fill="#8d9a7f" />
+                    <path d="M0 149 94 97l67 47 57-32 86 34v28H0v-25Z" fill="#64765f" />
+                    <rect x="31" y="46" width="65" height="79" rx="2" fill="#ede4d1" opacity=".8" />
+                    <path d="M48 46v79m20-79v79M31 72h65M31 98h65" stroke="#bfad91" strokeWidth="2" opacity=".8" />
+                    <path d="M215 151c-6-25 3-45 25-58m-25 58c-17-18-20-35-13-48m13 48c14-9 23-20 27-34" stroke="#d4c09d" strokeWidth="3" strokeLinecap="round" />
+                    <circle cx="228" cy="92" r="5" fill="#e5c58c" />
+                    <circle cx="201" cy="101" r="5" fill="#e5c58c" />
+                  </svg>
                   <span>FIG. 01 — WORK IN PROGRESS</span>
                 </div>
                 <div className="paper-bottom"><span>DESIGN / SYSTEMS / STORIES</span><span>FM—26</span></div>

@@ -28,7 +28,7 @@ Vite memakai `base: './'` agar aset menggunakan path relatif.
 ## Checklist sebelum publikasi
 
 - Ganti tautan placeholder dengan URL demo atau repository yang memang ingin dipublikasikan.
-- Gunakan screenshot project asli di folder `public/projects/` dan perbarui `src/data/projects.ts`.
+- Perbarui ringkasan dan ilustrasi proyek di `src/data/projects.ts` dan `src/components/ProjectArtwork.tsx`.
 - Verifikasi deskripsi, peran, tahun, dan klaim project.
 - Jangan tampilkan data karyawan, rekening, gaji, atau informasi perusahaan sensitif.
 - Uji desktop, mobile, keyboard, dan `prefers-reduced-motion`.
