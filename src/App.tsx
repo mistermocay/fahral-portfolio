@@ -53,23 +53,23 @@ export default function App() {
           </div>
           <div className="hero-layout">
             <div className="hero-copy">
-              <Reveal delay={0.08}><p className="eyebrow">DIGITAL MAKER & CREATIVE DEVELOPER</p></Reveal>
+              <Reveal delay={0.08}><p className="eyebrow">INDUSTRIAL ENGINEERING · DIGITAL SYSTEMS · CREATIVE DESIGN</p></Reveal>
               <motion.h1
                 initial={reduceMotion ? false : 'hidden'}
                 animate="show"
                 variants={{ hidden: {}, show: { transition: { staggerChildren: 0.12, delayChildren: 0.18 } } }}
               >
-                <motion.span variants={{ hidden: { opacity: 0, y: 45 }, show: { opacity: 1, y: 0, transition: { duration: reduceMotion ? 0 : 0.85, ease: 'easeOut' } } }}>Making digital</motion.span>
-                <motion.span className="hero-serif" variants={{ hidden: { opacity: 0, y: 45 }, show: { opacity: 1, y: 0, transition: { duration: reduceMotion ? 0 : 0.85, ease: 'easeOut' } } }}>feel <em>human.</em></motion.span>
+                <motion.span variants={{ hidden: { opacity: 0, y: 45 }, show: { opacity: 1, y: 0, transition: { duration: reduceMotion ? 0 : 0.85, ease: 'easeOut' } } }}>Portfolio of</motion.span>
+                <motion.span className="hero-serif" variants={{ hidden: { opacity: 0, y: 45 }, show: { opacity: 1, y: 0, transition: { duration: reduceMotion ? 0 : 0.85, ease: 'easeOut' } } }}><em>Ideas in motion.</em></motion.span>
               </motion.h1>
-              <Reveal delay={0.55}><p className="hero-intro">I build useful business systems and thoughtful digital experiences — where clear function meets a little bit of feeling.</p></Reveal>
+              <Reveal delay={0.55}><p className="hero-intro">Industrial Engineering graduate exploring business systems, data management, and creative digital experiences. I turn practical needs into thoughtful, useful work.</p></Reveal>
               <Reveal delay={0.65}>
                 <div className="hero-actions">
                   <a className="button button-dark" href="#work">Explore selected work <ArrowDownRight size={17} /></a>
                   <a className="text-link" href="#about">A little about me <ArrowRight size={15} /></a>
                 </div>
               </Reveal>
-              <div className="hero-footnote"><span>01 — 06</span><span>INDEPENDENT WORKS / 2026</span></div>
+              <div className="hero-footnote"><span>01 — 06</span><span>SYSTEMS / EXPERIENCES / DESIGN</span></div>
             </div>
 
             <motion.div className="hero-art" style={reduceMotion ? undefined : { y: artParallax }} initial={reduceMotion ? false : { opacity: 0, scale: 0.94, rotate: 2 }} animate={{ opacity: 1, scale: 1, rotate: 0 }} transition={{ duration: reduceMotion ? 0 : 1.1, delay: 0.25, ease: 'easeOut' }}>
@@ -79,7 +79,7 @@ export default function App() {
                 <div className="paper-top"><span>FIELD NOTES / 2026</span><Asterisk size={19} /></div>
                 <div className="paper-title">Ideas made<br /><em>tangible.</em></div>
                 <div className="paper-image">
-                  <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85" alt="Workspace dengan cahaya alami" fetchPriority="high" />
+                  <img src="https://i.vgy.me/e6ciEi.png" alt="Portrait of Fahral Athallah Chandra" fetchPriority="high" />
                   <span>FIG. 01 — WORK IN PROGRESS</span>
                 </div>
                 <div className="paper-bottom"><span>DESIGN / SYSTEMS / STORIES</span><span>FM—26</span></div>
@@ -102,7 +102,7 @@ export default function App() {
         <section className="work-section section-shell" id="work">
           <div className="section-heading">
             <Reveal><div><p className="eyebrow">A FEW THINGS I’VE MADE</p><h2>Selected <em>work.</em></h2></div></Reveal>
-            <Reveal delay={0.12}><p className="section-description">A mix of internal tools, digital products, and creative experiences. Each built to solve something or make a moment feel different.</p></Reveal>
+            <Reveal delay={0.12}><p className="section-description">Business systems, digital experiences, and visual design. A selection of work built to organize information, support people, and make moments memorable.</p></Reveal>
           </div>
           <div className="filter-bar" role="group" aria-label="Filter project">
             {filters.map(item => <button key={item} type="button" className={filter === item ? 'filter-button active' : 'filter-button'} onClick={() => setFilter(item)} aria-pressed={filter === item}>{item}<span>{item === 'All work' ? String(projects.length).padStart(2, '0') : String(projects.filter(p => p.category === item).length).padStart(2, '0')}</span></button>)}
@@ -120,7 +120,7 @@ export default function App() {
             <Reveal><div className="manifesto-label"><span className="eyebrow">02 / THE APPROACH</span><span className="manifesto-star"><Asterisk size={35} strokeWidth={1} /></span></div></Reveal>
             <div className="manifesto-content">
               <Reveal><h2>Good work lives<br />between <em>clarity</em><br />and character.</h2></Reveal>
-              <Reveal delay={0.12}><p>I’m drawn to projects that make everyday work simpler and digital moments more memorable. My approach starts with understanding the problem, then shaping a clear, considered experience around it.</p></Reveal>
+              <Reveal delay={0.12}><p>I’m an Industrial Engineering graduate interested in data management, business administration, digital systems, and creative design. I enjoy making information easier to manage and digital experiences more thoughtful.</p></Reveal>
               <Reveal delay={0.2}>
                 <div className="principles">
                   <div><span>01</span><strong>Useful by design</strong><p>Make the complicated feel manageable.</p></div>
@@ -135,7 +135,7 @@ export default function App() {
         <section className="contact-section section-shell" id="contact">
           <Reveal><p className="eyebrow">HAVE SOMETHING IN MIND?</p></Reveal>
           <Reveal delay={0.08}><h2>Let’s make<br />something <em>matter.</em></h2></Reveal>
-          <Reveal delay={0.16}><p className="contact-copy">Open to thoughtful collaborations, new ideas, and projects that deserve a little extra care.</p></Reveal>
+          <Reveal delay={0.16}><p className="contact-copy">Open to professional opportunities, collaborations, and creative projects. Feel free to get in touch.</p></Reveal>
           <Reveal delay={0.22}><a className="button button-light" href="https://github.com/mistermocay" target="_blank" rel="noreferrer">Find me on GitHub <ArrowUpRight size={17} /></a></Reveal>
           <div className="contact-decoration" aria-hidden="true">F<span>.</span></div>
           <div className="contact-bottom"><span>FAHRAL / DIGITAL WORKS</span><span>MADE WITH INTENTION <Asterisk size={13} /></span></div>
