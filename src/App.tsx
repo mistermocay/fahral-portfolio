@@ -62,7 +62,7 @@ export default function App() {
                 <motion.span variants={{ hidden: { opacity: 0, y: 45 }, show: { opacity: 1, y: 0, transition: { duration: reduceMotion ? 0 : 0.85, ease: 'easeOut' } } }}>Portfolio of</motion.span>
                 <motion.span className="hero-serif" variants={{ hidden: { opacity: 0, y: 45 }, show: { opacity: 1, y: 0, transition: { duration: reduceMotion ? 0 : 0.85, ease: 'easeOut' } } }}><em>Ideas in motion.</em></motion.span>
               </motion.h1>
-              <Reveal delay={0.55}><p className="hero-intro">Industrial Engineering graduate exploring business systems, data management, and creative digital experiences. I turn practical needs into thoughtful, useful work.</p></Reveal>
+              <Reveal delay={0.55}><p className="hero-intro">With a background in Agroindustrial Engineering, I explore business systems, practical digital tools, and creative experiences. I use modern development tools and AI assistants as part of my workflow.</p></Reveal>
               <Reveal delay={0.65}>
                 <div className="hero-actions">
                   <a className="button button-dark" href="#work">Explore selected work <ArrowDownRight size={17} /></a>
@@ -122,8 +122,8 @@ export default function App() {
           </div>
           <div className="education-copy">
             <p className="eyebrow">01 / THE FOUNDATION</p>
-            <h2>Learning shapes<br /><em>the way forward.</em></h2>
-            <p>My background in Industrial Engineering informs how I approach systems, operations, data, and problem-solving — with an eye for both structure and people.</p>
+            <h2>IPB University<br /><em>Agroindustrial Engineering.</em></h2>
+            <p>IPB University — Agroindustrial Engineering. This academic background informs how I approach systems, operations, data, and problem-solving.</p>
             <a className="text-link" href="#contact">Connect with me <ArrowRight size={15} /></a>
           </div>
         </section>
@@ -133,12 +133,12 @@ export default function App() {
             <Reveal><div className="manifesto-label"><span className="eyebrow">02 / THE APPROACH</span><span className="manifesto-star"><Asterisk size={35} strokeWidth={1} /></span></div></Reveal>
             <div className="manifesto-content">
               <Reveal><h2>Good work lives<br />between <em>clarity</em><br />and character.</h2></Reveal>
-              <Reveal delay={0.12}><p>I’m an Industrial Engineering graduate interested in data management, business administration, digital systems, and creative design. I enjoy making information easier to manage and digital experiences more thoughtful.</p></Reveal>
+              <Reveal delay={0.12}><p>I’m interested in the intersection of structured problem-solving, business administration, digital systems, and creative design. I enjoy making information easier to manage and digital experiences more thoughtful.</p></Reveal>
               <Reveal delay={0.2}>
                 <div className="principles">
-                  <div><span>01</span><strong>Useful by design</strong><p>Make the complicated feel manageable.</p></div>
-                  <div><span>02</span><strong>Details matter</strong><p>Typography, motion, and spacing all speak.</p></div>
-                  <div><span>03</span><strong>Built to be used</strong><p>Responsive, accessible, and fast enough.</p></div>
+                  <div><span>01</span><strong>VS Code</strong><p>My coding workspace.</p></div>
+                  <div><span>02</span><strong>ChatGPT</strong><p>AI assistant in my workflow.</p></div>
+                  <div><span>03</span><strong>Claude AI</strong><p>AI assistant in my workflow.</p></div>
                 </div>
               </Reveal>
             </div>
@@ -149,7 +149,8 @@ export default function App() {
           <Reveal><p className="eyebrow">HAVE SOMETHING IN MIND?</p></Reveal>
           <Reveal delay={0.08}><h2>Let’s make<br />something <em>matter.</em></h2></Reveal>
           <Reveal delay={0.16}><p className="contact-copy">Open to professional opportunities, collaborations, and creative projects. Feel free to get in touch.</p></Reveal>
-          <Reveal delay={0.22}><a className="button button-light" href="https://github.com/mistermocay" target="_blank" rel="noreferrer">Find me on GitHub <ArrowUpRight size={17} /></a></Reveal>
+          <Reveal delay={0.22}><a className="button button-light" href="mailto:fahralathallahchandra@gmail.com">Email me <ArrowUpRight size={17} /></a>
+          <a className="contact-email" href="mailto:fahralathallahchandra@gmail.com">fahralathallahchandra@gmail.com</a></Reveal>
           <div className="contact-decoration" aria-hidden="true">F<span>.</span></div>
           <div className="contact-bottom"><span>FAHRAL / DIGITAL WORKS</span><span>MADE WITH INTENTION <Asterisk size={13} /></span></div>
         </section>
