@@ -115,6 +115,19 @@ export default function App() {
           <div className="work-endnote"><span>END OF SELECTION</span><span>MORE EXPERIMENTS IN PROGRESS <Asterisk size={13} /></span></div>
         </section>
 
+        <section className="education-section section-shell" id="education">
+          <div className="education-visual">
+            <img src="https://i.vgy.me/IHgLMD.png" alt="Education background" loading="lazy" decoding="async" />
+            <span>EDUCATION / BACKGROUND</span>
+          </div>
+          <div className="education-copy">
+            <p className="eyebrow">01 / THE FOUNDATION</p>
+            <h2>Learning shapes<br /><em>the way forward.</em></h2>
+            <p>My background in Industrial Engineering informs how I approach systems, operations, data, and problem-solving — with an eye for both structure and people.</p>
+            <a className="text-link" href="#contact">Connect with me <ArrowRight size={15} /></a>
+          </div>
+        </section>
+
         <section className="manifesto-section" id="about">
           <div className="section-shell manifesto-layout">
             <Reveal><div className="manifesto-label"><span className="eyebrow">02 / THE APPROACH</span><span className="manifesto-star"><Asterisk size={35} strokeWidth={1} /></span></div></Reveal>
