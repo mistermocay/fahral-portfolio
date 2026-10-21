@@ -24,7 +24,7 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1400&q=85',
     accent: '#dbe6ed',
     tags: ['Dashboard', 'Search & filters', 'Documentation'],
-    href: '#contact',
+    href: 'https://github.com/mistermocay/masterbus-manageunit',
   },
   {
     id: 'payroll',
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=85',
     accent: '#e5dce8',
     tags: ['Payroll', 'Attendance', 'Reporting'],
-    href: '#contact',
+    href: 'https://github.com/mistermocay/masterbus-payroll',
   },
   {
     id: 'sigudang',
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1400&q=85',
     accent: '#d9e3dc',
     tags: ['Inventory', 'Transactions', 'Low-stock alerts'],
-    href: '#contact',
+    href: 'https://github.com/mistermocay/masterbus-gudang',
   },
   {
     id: 'luma',
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1400&q=85',
     accent: '#e9d4a9',
     tags: ['Event experience', 'Photo sharing', 'Branding'],
-    href: '#contact',
+    href: 'https://github.com/mistermocay/disposable-momment',
   },
   {
     id: 'wedding',
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=85',
     accent: '#ead8ce',
     tags: ['Art direction', 'Editorial design', 'Motion'],
-    href: '#contact',
+    href: 'https://github.com/mistermocay/fabianus',
   },
   {
     id: 'masterbus-home',
@@ -89,6 +89,6 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=85',
     accent: '#d9e2f3',
     tags: ['Navigation', 'Dashboard', 'Design system'],
-    href: '#contact',
+    href: 'https://github.com/mistermocay/masterbus-dashboard',
   },
 ]
