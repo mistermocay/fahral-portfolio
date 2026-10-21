@@ -196,3 +196,5 @@ button:focus-visible,a:focus-visible{outline-color:#e0c38a}
 .education-copy h2 em{color:#d6b778}
 .education-copy>p:not(.eyebrow){font-size:13px;line-height:1.9;color:#b8ad9a;max-width:470px;margin:22px 0}
 @media(max-width:700px){.education-section{grid-template-columns:1fr;padding-top:0;padding-bottom:65px;gap:25px}.education-visual,.education-visual img{min-height:230px}}
+
+.contact-email{display:inline-block;position:relative;z-index:1;margin:14px 0 0;color:#0b0b09;font-size:12px;text-decoration:underline;text-underline-offset:4px}
