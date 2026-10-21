@@ -53,23 +53,23 @@ export default function App() {
           </div>
           <div className="hero-layout">
             <div className="hero-copy">
-              <Reveal delay={0.08}><p className="eyebrow">DIGITAL MAKER & CREATIVE DEVELOPER</p></Reveal>
+              <Reveal delay={0.08}><p className="eyebrow">INDUSTRIAL ENGINEERING · DIGITAL SYSTEMS · CREATIVE DESIGN</p></Reveal>
               <motion.h1
                 initial={reduceMotion ? false : 'hidden'}
                 animate="show"
                 variants={{ hidden: {}, show: { transition: { staggerChildren: 0.12, delayChildren: 0.18 } } }}
               >
-                <motion.span variants={{ hidden: { opacity: 0, y: 45 }, show: { opacity: 1, y: 0, transition: { duration: reduceMotion ? 0 : 0.85, ease: 'easeOut' } } }}>Making digital</motion.span>
-                <motion.span className="hero-serif" variants={{ hidden: { opacity: 0, y: 45 }, show: { opacity: 1, y: 0, transition: { duration: reduceMotion ? 0 : 0.85, ease: 'easeOut' } } }}>feel <em>human.</em></motion.span>
+                <motion.span variants={{ hidden: { opacity: 0, y: 45 }, show: { opacity: 1, y: 0, transition: { duration: reduceMotion ? 0 : 0.85, ease: 'easeOut' } } }}>Portfolio of</motion.span>
+                <motion.span className="hero-serif" variants={{ hidden: { opacity: 0, y: 45 }, show: { opacity: 1, y: 0, transition: { duration: reduceMotion ? 0 : 0.85, ease: 'easeOut' } } }}><em>Ideas in motion.</em></motion.span>
               </motion.h1>
-              <Reveal delay={0.55}><p className="hero-intro">I build useful business systems and thoughtful digital experiences — where clear function meets a little bit of feeling.</p></Reveal>
+              <Reveal delay={0.55}><p className="hero-intro">With a background in Agroindustrial Engineering, I explore business systems, practical digital tools, and creative experiences. I use modern development tools and AI assistants as part of my workflow.</p></Reveal>
               <Reveal delay={0.65}>
                 <div className="hero-actions">
                   <a className="button button-dark" href="#work">Explore selected work <ArrowDownRight size={17} /></a>
                   <a className="text-link" href="#about">A little about me <ArrowRight size={15} /></a>
                 </div>
               </Reveal>
-              <div className="hero-footnote"><span>01 — 06</span><span>INDEPENDENT WORKS / 2026</span></div>
+              <div className="hero-footnote"><span>01 — 06</span><span>SYSTEMS / EXPERIENCES / DESIGN</span></div>
             </div>
 
             <motion.div className="hero-art" style={reduceMotion ? undefined : { y: artParallax }} initial={reduceMotion ? false : { opacity: 0, scale: 0.94, rotate: 2 }} animate={{ opacity: 1, scale: 1, rotate: 0 }} transition={{ duration: reduceMotion ? 0 : 1.1, delay: 0.25, ease: 'easeOut' }}>
@@ -79,17 +79,7 @@ export default function App() {
                 <div className="paper-top"><span>FIELD NOTES / 2026</span><Asterisk size={19} /></div>
                 <div className="paper-title">Ideas made<br /><em>tangible.</em></div>
                 <div className="paper-image">
-                  <svg viewBox="0 0 304 174" aria-hidden="true">
-                    <rect width="304" height="174" fill="#c9b79e" />
-                    <circle cx="244" cy="34" r="55" fill="#e8d6b9" />
-                    <path d="M0 137 98 70l78 56 62-44 66 40v52H0v-37Z" fill="#8d9a7f" />
-                    <path d="M0 149 94 97l67 47 57-32 86 34v28H0v-25Z" fill="#64765f" />
-                    <rect x="31" y="46" width="65" height="79" rx="2" fill="#ede4d1" opacity=".8" />
-                    <path d="M48 46v79m20-79v79M31 72h65M31 98h65" stroke="#bfad91" strokeWidth="2" opacity=".8" />
-                    <path d="M215 151c-6-25 3-45 25-58m-25 58c-17-18-20-35-13-48m13 48c14-9 23-20 27-34" stroke="#d4c09d" strokeWidth="3" strokeLinecap="round" />
-                    <circle cx="228" cy="92" r="5" fill="#e5c58c" />
-                    <circle cx="201" cy="101" r="5" fill="#e5c58c" />
-                  </svg>
+                  <img src="https://i.vgy.me/e6ciEi.png" alt="Portrait of Fahral Athallah Chandra" fetchPriority="high" />
                   <span>FIG. 01 — WORK IN PROGRESS</span>
                 </div>
                 <div className="paper-bottom"><span>DESIGN / SYSTEMS / STORIES</span><span>FM—26</span></div>
@@ -112,7 +102,7 @@ export default function App() {
         <section className="work-section section-shell" id="work">
           <div className="section-heading">
             <Reveal><div><p className="eyebrow">A FEW THINGS I’VE MADE</p><h2>Selected <em>work.</em></h2></div></Reveal>
-            <Reveal delay={0.12}><p className="section-description">A mix of internal tools, digital products, and creative experiences. Each built to solve something or make a moment feel different.</p></Reveal>
+            <Reveal delay={0.12}><p className="section-description">Business systems, digital experiences, and visual design. A selection of work built to organize information, support people, and make moments memorable.</p></Reveal>
           </div>
           <div className="filter-bar" role="group" aria-label="Filter project">
             {filters.map(item => <button key={item} type="button" className={filter === item ? 'filter-button active' : 'filter-button'} onClick={() => setFilter(item)} aria-pressed={filter === item}>{item}<span>{item === 'All work' ? String(projects.length).padStart(2, '0') : String(projects.filter(p => p.category === item).length).padStart(2, '0')}</span></button>)}
@@ -125,17 +115,30 @@ export default function App() {
           <div className="work-endnote"><span>END OF SELECTION</span><span>MORE EXPERIMENTS IN PROGRESS <Asterisk size={13} /></span></div>
         </section>
 
+        <section className="education-section section-shell" id="education">
+          <div className="education-visual">
+            <img src="https://i.vgy.me/IHgLMD.png" alt="Education background" loading="lazy" decoding="async" />
+            <span>EDUCATION / BACKGROUND</span>
+          </div>
+          <div className="education-copy">
+            <p className="eyebrow">01 / THE FOUNDATION</p>
+            <h2>IPB University<br /><em>Agroindustrial Engineering.</em></h2>
+            <p>IPB University — Agroindustrial Engineering. This academic background informs how I approach systems, operations, data, and problem-solving.</p>
+            <a className="text-link" href="#contact">Connect with me <ArrowRight size={15} /></a>
+          </div>
+        </section>
+
         <section className="manifesto-section" id="about">
           <div className="section-shell manifesto-layout">
             <Reveal><div className="manifesto-label"><span className="eyebrow">02 / THE APPROACH</span><span className="manifesto-star"><Asterisk size={35} strokeWidth={1} /></span></div></Reveal>
             <div className="manifesto-content">
               <Reveal><h2>Good work lives<br />between <em>clarity</em><br />and character.</h2></Reveal>
-              <Reveal delay={0.12}><p>I’m drawn to projects that make everyday work simpler and digital moments more memorable. My approach starts with understanding the problem, then shaping a clear, considered experience around it.</p></Reveal>
+              <Reveal delay={0.12}><p>I’m interested in the intersection of structured problem-solving, business administration, digital systems, and creative design. I enjoy making information easier to manage and digital experiences more thoughtful.</p></Reveal>
               <Reveal delay={0.2}>
                 <div className="principles">
-                  <div><span>01</span><strong>Useful by design</strong><p>Make the complicated feel manageable.</p></div>
-                  <div><span>02</span><strong>Details matter</strong><p>Typography, motion, and spacing all speak.</p></div>
-                  <div><span>03</span><strong>Built to be used</strong><p>Responsive, accessible, and fast enough.</p></div>
+                  <div><span>01</span><strong>VS Code</strong><p>My coding workspace.</p></div>
+                  <div><span>02</span><strong>ChatGPT</strong><p>AI assistant in my workflow.</p></div>
+                  <div><span>03</span><strong>Claude AI</strong><p>AI assistant in my workflow.</p></div>
                 </div>
               </Reveal>
             </div>
@@ -145,8 +148,9 @@ export default function App() {
         <section className="contact-section section-shell" id="contact">
           <Reveal><p className="eyebrow">HAVE SOMETHING IN MIND?</p></Reveal>
           <Reveal delay={0.08}><h2>Let’s make<br />something <em>matter.</em></h2></Reveal>
-          <Reveal delay={0.16}><p className="contact-copy">Open to thoughtful collaborations, new ideas, and projects that deserve a little extra care.</p></Reveal>
-          <Reveal delay={0.22}><a className="button button-light" href="https://github.com/mistermocay" target="_blank" rel="noreferrer">Find me on GitHub <ArrowUpRight size={17} /></a></Reveal>
+          <Reveal delay={0.16}><p className="contact-copy">Open to professional opportunities, collaborations, and creative projects. Feel free to get in touch.</p></Reveal>
+          <Reveal delay={0.22}><a className="button button-light" href="mailto:fahralathallahchandra@gmail.com">Email me <ArrowUpRight size={17} /></a>
+          <a className="contact-email" href="mailto:fahralathallahchandra@gmail.com">fahralathallahchandra@gmail.com</a></Reveal>
           <div className="contact-decoration" aria-hidden="true">F<span>.</span></div>
           <div className="contact-bottom"><span>FAHRAL / DIGITAL WORKS</span><span>MADE WITH INTENTION <Asterisk size={13} /></span></div>
         </section>

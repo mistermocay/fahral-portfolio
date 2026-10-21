@@ -3,7 +3,7 @@ import type { Project } from '../data/projects'
 export default function ProjectArtwork({ project }: { project: Project }) {
   return (
     <svg className={`project-artwork project-artwork--${project.id}`} viewBox="0 0 600 360" fill="none" aria-hidden="true">
-      {project.id === 'manage-unit' && (
+      {project.id === 'unit-documentation' && (
         <>
           <rect width="600" height="360" fill="#D8E4E8" />
           <rect x="54" y="48" width="492" height="264" rx="12" fill="#F8F7F2" />
@@ -131,7 +131,7 @@ export default function ProjectArtwork({ project }: { project: Project }) {
           <circle cx="431" cy="250" r="4" fill="#B9A382" />
         </>
       )}
-      {project.id === 'masterbus-home' && (
+      {project.id === 'graphic-design' && (
         <>
           <rect width="600" height="360" fill="#DCE3F0" />
           <circle cx="514" cy="67" r="108" fill="#C9D3E8" opacity=".7" />
