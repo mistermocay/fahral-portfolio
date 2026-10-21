@@ -26,6 +26,15 @@ export default function ProjectCard({ project, index }: { project: Project; inde
           <span className="project-number">{project.number} / SELECTED WORK</span>
           <span className="project-open" aria-hidden="true"><ArrowUpRight size={18} /></span>
         </div>
+        {project.gallery && project.gallery.length > 0 && (
+          <div className="project-gallery" aria-label={`Additional screenshots for ${project.title}`}>
+            {project.gallery.map((image, imageIndex) => (
+              <div className="project-gallery-item" key={image}>
+                <img src={image} alt={`${project.title} additional view ${imageIndex + 1}`} loading="lazy" decoding="async" />
+              </div>
+            ))}
+          </div>
+        )}
         <div className="project-info">
           <div className="project-meta"><span>{project.category}</span><span>{project.year}</span></div>
           <h3>{project.title} <MoveUpRight className="inline-arrow" size={16} aria-hidden="true" /></h3>
