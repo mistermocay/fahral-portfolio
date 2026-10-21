@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
+import { AnimatePresence, motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
 import { ArrowDown, ArrowDownRight, ArrowRight, ArrowUpRight, Asterisk, Menu, X } from 'lucide-react'
 import Reveal from './components/Reveal'
 import ProjectCard from './components/ProjectCard'
@@ -13,6 +13,8 @@ export default function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrollProgress, setScrollProgress] = useState(0)
   const reduceMotion = useReducedMotion()
+  const { scrollY } = useScroll()
+  const artParallax = useTransform(scrollY, [0, 700], [0, 90])
 
   useEffect(() => {
     const update = () => {
@@ -70,7 +72,7 @@ export default function App() {
               <div className="hero-footnote"><span>01 — 06</span><span>INDEPENDENT WORKS / 2026</span></div>
             </div>
 
-            <motion.div className="hero-art" initial={reduceMotion ? false : { opacity: 0, scale: 0.94, rotate: 2 }} animate={{ opacity: 1, scale: 1, rotate: 0 }} transition={{ duration: reduceMotion ? 0 : 1.1, delay: 0.25, ease: 'easeOut' }}>
+            <motion.div className="hero-art" style={reduceMotion ? undefined : { y: artParallax }} initial={reduceMotion ? false : { opacity: 0, scale: 0.94, rotate: 2 }} animate={{ opacity: 1, scale: 1, rotate: 0 }} transition={{ duration: reduceMotion ? 0 : 1.1, delay: 0.25, ease: 'easeOut' }}>
               <div className="art-orbit orbit-one" />
               <div className="art-orbit orbit-two" />
               <motion.div className="art-paper" animate={reduceMotion ? undefined : { y: [0, -7, 0], rotate: [0, 0.6, 0] }} transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}>
